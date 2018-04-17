@@ -14,18 +14,7 @@ class ContactController extends TestCase
      *
      * @return void
      */
-    public function testInsert(){
-        $this->browse(function ($browser) {
-            $browser->visit('/home')
-                    -> assertSee('Latest Transactions');
-        });
-        /*$this->visit('/insertContact')
-         ->type('ivan', 'name')
-         ->type('ivan@gmail.com', 'email')
-         ->type('21 1234-56789', 'tel_number')
-         ->press('enviar')
-         ->seePageIs('/');*/
-    }
+    
     public function testIndex()
     {
         $response = $this->get('/');
