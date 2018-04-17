@@ -46,7 +46,7 @@
                         <div class="form-group{{ $errors->has('tel_number') ? ' has-error' : '' }}">
                             <label for="tel_number" class="col-md-4 control-label">Telefone</label>
                             <div class="col-md-6">
-                                <input id="tel_number" type="text" class="form-control" name="tel_number" value="{{ old('tel_number',$contato->tel_number ) }}" required autofocus>
+                                <input id="tel_number" type="text" class="form-control" name="tel_number" placeholder='(21) 9123-45678' value="{{ old('tel_number',$contato->tel_number ) }}" required autofocus>
                             </div>
                         </div>
 
